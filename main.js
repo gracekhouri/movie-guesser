@@ -20,10 +20,8 @@ const hint = document.getElementById('collapseExample')
 let moviechoice = movies[generateRandomNum(11)];
 
 explanation.innerHTML = moviechoice.explanation;
+hint.innerHTML = moviechoice.hint;
 
-hint.addEventListener('click', () => {
-    hint.innerHTML = moviechoice.hint;
-});
 
 button.addEventListener('click', () => {
     if (input.value == moviechoice.title) {
